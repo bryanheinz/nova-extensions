@@ -1,0 +1,26 @@
+{
+    "identifier": "com.bryanheinz.nova.executive",
+    "name": "Executive",
+    "organization": "Bryan Heinz",
+    "description": "Make the current file executable from within Nova.",
+    "version": "1.0",
+    "categories": ["commands"],
+    "repository": "https://github.com/bryanheinz/nova-extensions",
+    "bugs": "https://github.com/bryanheinz/nova-extensions/issues",
+    "main": "main.js",
+    "license": "https://github.com/bryanheinz/nova-extensions/blob/main/LICENSE",
+    "homepage": "https://bryanheinz.com",
+    "entitlements": {
+        "filesystem": "readwrite",
+        "process": true
+    },
+    "commands": {
+        "extensions": [
+            {
+                "title": "Make Executable",
+                "command": "executive.make",
+                "when": "documentHasPath"
+            }
+        ]
+    },
+}
